@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    height: 100%;
+    font-family: 'arial';
+    max-width: 900px;
+    font-size: 13px;
+}
+body header {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: "head head2";
+
+}
+body mainheader {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: "tom underhead";
+}
+body main {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: "main main2";
+}
+#head {
+    grid-area: head;
+    color: red;
+    text-align: center;
+}
+#head2 {
+    grid-area: head2;
+    text-align: center;
+    margin:10px;
+    border-style: solid;
+    }
+#underhead {
+    grid-area: underhead;
+    text-align: center;
+    border-style: solid;
+    padding: 10px;
+    margin: 10px;
+}
+#underhead h3 {
+    word-spacing: 20px;
+}
+#underhead p {
+    word-spacing: 100px;
+}
+
+#main {
+    grid-area: main;
+    align-self: start;
+    padding: 10px;
+    margin: 10px;
+    border-style: solid;
+}
+#main2 {
+    grid-area: main2;
+    align-self: start;
+    padding: 10px;
+    margin: 10px;
+    border-style: solid;
+}
+
+.container {
+    padding: 1em;
+}
+
+.container2 {
+    padding: 1em;
+    margin: 2px;
+}
+.row {
+    margin: 10px;
+    padding-left: 10px;
+
+}
+.column {
+    float: left;
+    width: 25%;
+}
+.columntext1 {
+    text-align: right;
+}
+.columntext2 {
+    text-align: center;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.row2 {
+    border-style: solid;
+    margin: 10px;
+    padding-left: 10px;  
+    background-color: black;
+    color: white;
+    font-weight: bold;     
+}
+.column2 {
+    float: left;
+    width: 25%;
+}
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.row3 {
+    border-style: solid;
+    margin: 10px;
+    margin-bottom: 0px;
+    border-bottom: none;
+    padding-left: 10px;
+}
+.column3 {
+    float: left;
+    width: 25%;
+}
+.row3:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.row4 {
+    border-style: solid;
+    border-top: none;
+    margin: 10px;
+    margin-top: 0;
+    padding-left: 10px;
+
+}
+.column4 {
+    float: left;
+    width: 25%;
+}
+.row4:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.space {
+   padding-top: 150px;
+}
+
